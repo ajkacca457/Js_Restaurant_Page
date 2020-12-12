@@ -1,6 +1,6 @@
 import Patty from './images/wallpaper2.png';
 
-function Homepage() {
+const Homepage = () => {
   const homepage = document.createElement('div');
   homepage.classList.add('home', 'show', 'active');
   homepage.id = 'home';
@@ -34,6 +34,6 @@ our food quality is our identity </h2>
   homepage.appendChild(homecont);
   homepage.appendChild(homecont2);
   document.body.appendChild(homepage);
-}
+};
 
 export default Homepage;

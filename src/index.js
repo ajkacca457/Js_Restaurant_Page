@@ -7,14 +7,14 @@ import Footer from './footer';
 import Contact from './contact';
 
 
-function init() {
+const init = () => {
   Navbar();
   Homepage();
   About();
   Menu();
   Contact();
   Footer();
-}
+};
 
 init();
 

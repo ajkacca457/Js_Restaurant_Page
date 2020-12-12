@@ -1,7 +1,7 @@
 import map from './images/map.png';
 
 
-function Contact() {
+const Contact = () => {
   const contactdiv = document.createElement('div');
   contactdiv.classList.add('contact', 'show');
   contactdiv.id = 'contact';
@@ -76,7 +76,7 @@ IL, 55030</p>
   contactdiv.appendChild(workinghours);
   contactdiv.appendChild(contactinfo);
   document.body.appendChild(contactdiv);
-}
+};
 
 
 export default Contact;

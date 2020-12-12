@@ -1,7 +1,7 @@
 import Img1 from './images/img1.png';
 import Img2 from './images/img2.png';
 
-function About() {
+const About = () => {
   const aboutdiv = document.createElement('div');
   aboutdiv.classList.add('about', 'show');
   aboutdiv.id = 'about';
@@ -43,6 +43,6 @@ Each menu is designed for parties of 20 guests or more. By using a pre-set menu,
   aboutdiv.appendChild(title);
   aboutdiv.appendChild(cardcont);
   document.body.appendChild(aboutdiv);
-}
+};
 
 export default About;

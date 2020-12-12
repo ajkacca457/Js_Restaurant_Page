@@ -1,7 +1,7 @@
 import Banner from './images/foodbanner.jpg';
 import Logo from './images/mainlogo.png';
 
-function Menu() {
+const Menu = () => {
   const menudiv = document.createElement('div');
   menudiv.classList.add('menu', 'show');
   menudiv.id = 'menu';
@@ -140,6 +140,6 @@ function Menu() {
   menudiv.appendChild(topimg);
   menudiv.appendChild(menuinfo);
   document.body.appendChild(menudiv);
-}
+};
 
 export default Menu;

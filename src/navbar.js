@@ -1,4 +1,4 @@
-function Navbar() {
+const Navbar = () => {
   const navdiv = document.createElement('div');
   navdiv.classList.add('navbar');
   navdiv.id = 'navbar';
@@ -12,6 +12,6 @@ function Navbar() {
 <li class="link" data-tab-target="#contact">Contact</li>`;
   navdiv.appendChild(navlinkul);
   document.body.appendChild(navdiv);
-}
+};
 
 export default Navbar;

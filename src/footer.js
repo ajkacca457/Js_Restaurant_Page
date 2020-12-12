@@ -5,7 +5,7 @@ import linkedin from './images/linked.png';
 import whatsapp from './images/whatsapp.png';
 
 
-function Footer() {
+const Footer = () => {
   const footer = document.createElement('div');
   footer.classList.add('footer');
   const footerinfo = document.createElement('div');
@@ -19,6 +19,6 @@ function Footer() {
   `;
   footer.appendChild(footerinfo);
   document.body.appendChild(footer);
-}
+};
 
 export default Footer;
