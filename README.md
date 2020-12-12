@@ -34,7 +34,6 @@ $ cd <folder>
 
 $ git clone `https://github.com/ajkacca457/Restaurant_page_js.git`
 $ cd Restaurant_page_js
-$ bundle install
 $ Run `npm install` to install the necessary modules
 
 ```
