@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Lora:ital@1&display=swap');
+
+body,ul{
+  padding: 0;
+  margin: 0;
+font-family: 'EB Garamond', serif;
+box-sizing: border-box;
+}
+
+.show {
+  display: none;
+}
+.show.active{
+  display: block;
+}
+
+.navbar{
+  background-color:rgb(255,239,213);
+  padding: 5px 0;
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  height: 50px;
+}
+
+.navlink{
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-size: 120%;
+}
+
+.navlink li {
+  list-style-type: none;
+  margin: 10px;
+}
+.navlink li:hover {
+  cursor: pointer;
+  border-bottom:1px black solid;
+}
+
+.home {
+  background-image: url("images/wallpaper.jpg");
+   background-size:100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center bottom;
+   height: 100vh;
+}
+
+.homeinfo {
+  border-radius: 5px;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.80);
+  position: absolute;
+  left: 20px;
+  top: 20%;
+  text-align: center;
+  color:white;
+  font-size: 130%;
+}
+
+.home2 {
+  width: 70%;
+  margin: auto;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  font-size: 120%;
+}
+
+.small {
+  width: 300px;
+  height: 400px;
+  margin-right: 30px;
+}
+.text {
+  width: 100%;
+  text-align: justify;
+}
+.gold {
+  color:rgb(218, 128, 68);
+}
+
+.reservation {
+  background-color: transparent;
+  border: 2px solid rgb(218, 128, 68);
+  padding: 10px 10px;
+  border-radius:none;
+}
+
+.reservation:focus{
+  outline: none;
+  cursor: pointer;
+}
+.reservation:hover{
+  background-color: #696969;
+  border: none;
+  color:white;
+  border: 2px solid #696969;
+}
+
+.mlogo{
+  height: 150px;
+  width: 150px;
+}
+
+.menuinfo {
+  text-align: center;
+  width: 70%;
+  margin: 10px auto 100px auto;
+  padding-bottom: 50px;
+  border: 2px solid rgb(218, 128, 68,.4);
+  padding: 15px;
+}
+
+.about {
+  margin: 100px auto 100px auto;
+  padding-bottom: 50px;
+  width: 70%;
+}
+.about h1 {
+  text-align: center;
+}
+.about p {
+  font-size: 120%;
+}
+.card {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+}
+
+.card-item{
+  padding: 10px;
+}
+.card-img {
+  width: 100%;
+}
+.text-small{
+  text-align: justify;
+}
+
+.contact {
+  margin: 100px auto 100px auto;
+  padding-bottom: 50px;
+  width: 70%;
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+.map {
+  margin: 30px 0;
+}
+
+.routine {
+  list-style-type: none;
+}
+.routine li {
+  font-size: 120%;
+}
+
+.divider {
+  margin: 20px 0;
+  opacity: .5;
+}
+.contactcont {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.banner {
+  width: 100%;
+  height:350px;
+}
+
+.menu-list {
+  text-align: center;
+}
+
+.menu-cont-1 {
+  margin:3% 0;
+  text-align:left;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+
+}
+.text-body {
+  width: 90%;
+  margin-top:-15px;
+}
+
+.menu-head {
+  text-align: center;
+}
+
+.icon {
+  width: 30px;
+  height:30px;
+  margin: 10px;
+}
+
+.footer  {
+  background-color:rgb(255,239,213);
+  padding: 15px 0;
+  position: fixed;
+  bottom:0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+
+}
+
+.footerinfo{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 1100px) and (min-width: 701px) {
+
+  .home {
+    background-image: url("images/wallpaper.jpg");
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     height: 100vh;
+
+  }
+
+  .homeinfo {
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    color:white;
+    font-size: 100%;
+    left: 10%;
+  }
+
+  .map {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+}
+
+
+ @media only screen and (max-width: 700px) {
+
+   .navlink{
+     width: 50%;
+     font-size: 100%;
+   }
+
+   .navlink li {
+     list-style-type: none;
+     margin: 10px;
+   }
+   .navlink li:hover {
+     cursor: pointer;
+     border-bottom:1px black solid;
+   }
+
+   .home {
+     background-image: url("images/wallpaper.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      height: 100vh;
+
+   }
+
+   .homeinfo {
+     border-radius: 5px;
+     width: 80%;
+     background-color: rgba(0, 0, 0, 0.80);
+     text-align: center;
+     color:white;
+     font-size: 100%;
+     left: 10%;
+   }
+
+   .home2 {
+     width: 100%;
+   }
+
+   .detail {
+     display:block;
+     font-size: 100%;
+     padding: 10px;
+     margin-bottom:100px;
+     text-align: center;
+   }
+
+   .small {
+     width: 90%;
+     margin: auto;
+   }
+   .text {
+     width:80%;
+     text-align: justify;
+     margin: 20px auto;
+   }
+   .head1 {
+     font-size: 100%;
+   }
+   .gold {
+     color:rgb(218, 128, 68);
+   }
+
+   .mlogo{
+     height:80px;
+     width: 80px;
+   }
+
+   .about {
+     width: 70%;
+   }
+   .about h1 {
+     font-size: 100%;
+   }
+
+   .card {
+     display: block;
+   }
+
+   .card-item{
+     padding: 10px;
+   }
+   .card-item h2 {
+     font-size: 100%;
+   }
+   .card-item p {
+     text-align: justify;
+   }
+
+   .text-small{
+     text-align: justify;
+   }
+
+   .contact {
+     margin: 100px auto 100px auto;
+     padding-bottom: 50px;
+     width: 70%;
+     text-align: center;
+   }
+
+   .location {
+     display: flex;
+     justify-content: space-between;
+   }
+   .map {
+     margin: 30px 0;
+     width: 100%;
+   }
+
+   .routine {
+     list-style-type: none;
+   }
+   .routine li {
+     font-size: 120%;
+   }
+
+   .divider {
+     margin: 20px 0;
+     opacity: .5;
+   }
+   .contactcont {
+     display: block;
+     margin-top: 20px;
+   }
+
+   .banner {
+     width: 100%;
+     height:350px;
+   }
+
+   .location {
+     display: block;
+     font-size: 100%;
+   }
+   .location-item h2 {
+     font-size: 100%;
+   }
+
+  .worktitle {
+    font-size: 100%;
+  }
+
+  .contact-item h2 {
+    font-size: 100%;
+  }
+
+ }
